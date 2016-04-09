@@ -3,7 +3,7 @@ Check extended functionality
 --SKIPIF--
 <?php if (!extension_loaded("explain")) print "skip"; ?>
 --FILE--
-<?php 
+<?php
 var_dump(count(explain(<<<HERE
 error_reporting(E_ALL);
 
@@ -26,4 +26,4 @@ HERE
 , EXPLAIN_STRING)));
 ?>
 --EXPECT--
-int(26)
+int(27)
